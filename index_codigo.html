@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti, amor ❤️</title>
+    <link rel="stylesheet" href="style_codigo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hearts-background"></div>
+    
+    <!-- Pantalla inicial -->
+    <div id="start-screen" class="card">
+        <h1>Nuestra primera cita</h1>
+        <h1>dia/mes/año</h1> <!-- CAMBIA LA FECHA -->
+        
+        <!-- Gatito pensando sobre el teclado -->
+        <div class="gif-container">
+            <img id="thinking-cat" src="gatito_pensando.gif" alt="Gatito pensando"> <!-- CAMBIA EL GIF -->
+        </div>
+
+        <div id="code-display">_ _ _ _ _ _</div>
+
+        <div class="keyboard">
+            <button class="key">1</button>
+            <button class="key">2</button>
+            <button class="key">3</button>
+            <button class="key">4</button>
+            <button class="key">5</button>
+            <button class="key">6</button>
+            <button class="key">7</button>
+            <button class="key">8</button>
+            <button class="key">9</button>
+            <button class="key">0</button>
+            <button id="delete-key">⌫</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <!-- Pantalla de éxito -->
+    <div id="success-screen" class="hidden card">
+        <img id="happy-cat" src="gatito_feliz.gif" alt="Gatito feliz"> <!-- CAMBIA EL GIF -->
+        <h1>¡Correcto, mi amor! 💖</h1>
+        <p>Has descubierto el código secreto...</p>
+        <button id="continue-btn">Continuar</button>
+    </div>
+
+    <!-- Pantalla de error -->
+    <div id="error-screen" class="hidden card">
+        <img id="sad-cat" src="gatito_triste.gif" alt="Gatito triste"> <!-- CAMBIA EL GIF -->
+        <h1>¡Ups! 😢</h1>
+        <p>Ese no era el código correcto...</p>
+        <button id="try-again-btn">Intenta de nuevo</button>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="Que Se Cumplan Tus Sueños.mp3" type="audio/mpeg"> <!-- CAMBIA LA MÚSICA -->
+    </audio>
+
+    <script src="script_codigo.js"></script>
+</body>
+</html>
