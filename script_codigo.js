@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // CONFIGURACIÓN (¡CAMBIA ESTOS VALORES!)
-    const correctCode = "123456"; // Código secreto (cámbialo)
+    const correctCode = "130625"; // Código secreto (cámbialo)
     const thinkingCat = "gatito_pensando.gif"; // Ruta de tu GIF
     const happyCat = "gatito_feliz.gif"; // Ruta de tu GIF
     const sadCat = "gatito_triste.gif"; // Ruta de tu GIF
